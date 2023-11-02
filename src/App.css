@@ -13,17 +13,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
 }
@@ -32,7 +21,257 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  height: 70px;
+  padding: 16px;
+}
+
+.header-image img {
+  max-width: 100%;
+  max-height: 250px;
+  padding-bottom: 35px;
+}
+
+.header-text {
+  flex: 3;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.black-text {
+  color: black;
+  margin-right: 20px;
+}
+
+.red-bg {
+  align-items: center;
+  color: white;
+  background-color: #B5121B;
+  padding: 5px 10px;
+}
+
+.app-video {
+  background-color: #161616;
+  position: relative;
+}
+
+.video-header {
+  width: 100%;
+  height: 100%;
+  opacity: 40%;
+  object-fit: cover;
+  position: relative;
+}
+
+.text-overlay {
+  font-size: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+
+  width: 100%;
+  height: 100%;
+
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+.red-text {
+  color: #B5121B;
+}
+
+.button {
+  background-color: #B5121B;
+  text-decoration: none;
+  border-style: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  outline: none;
+  padding: 28px 25px;
+  /* padding: 10px 16px; */
+  position: relative;
+  text-align: center;
+  transition: color 100ms;
+  vertical-align: baseline;
+
+  touch-action: manipulation;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.align-mid {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #83141A;
+}
+
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  opacity: 20%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.bg-image-container {
+  background-color: #161616;
+  min-width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  z-index: 1;
+  padding-bottom: 70px;
+}
+
+.tri-service {
+  display: flex;
+  justify-content: space-between;
+  margin: 90px;
+  color: white;
+}
+
+.panel-service {
+  width: 30%;
+  text-align: left;
+  /* padding: 50px 20px; */
+  padding: 3% 3%;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, .2);
+  border-radius: 5px;
+}
+
+.contact-section {
+  text-align: left;
+  padding: 0px 90px;
+  color: white;
+  z-index: 100;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-logo img {
+  width: 100px;
+  height: auto;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 20px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-social {
+  margin-top: 20px;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.footer-social img {
+  width: 30px;
+  height: auto;
+}
+
+.App {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.text-small {
+  font-size: small;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.href-link:link {
+  color: lightgrey;
+}
+
+.href-link:visited {
+  color: grey;
+  text-decoration: none;
+}
+
+.href-link:hover {
+  color: #ECECEC;
+  text-decoration: none;
+}
+
+.href-link:active {
+  color: white;
+  text-decoration: none;
 }
