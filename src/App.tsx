@@ -5,7 +5,7 @@ import Contact from './Contact';
 
 function App() {
   return (
-    <div className="App">
+    <div className="contact-container">
       <div className="app-header">
         <div className="header-image">
           <a href="/">
@@ -43,10 +43,10 @@ function App() {
 }
 
 function Main() {
-  // const navigate = useNavigate();
-  // const handleNavigation = () => {
-  //   navigate("https://www.facebook.com/profile.php?id=61550872804595")
-  // }
+  const navigate = useNavigate();
+  const handleNavigation = () => {
+    navigate("contact")
+  }
 
   return (
     <body className='body'>
@@ -57,8 +57,9 @@ function Main() {
             L’ART DE LA
             <span className="red-text"> PERFORMANCE</span><br />REPROGRAMMATION TOUS MOTEURS</h1>
           <br />
-          <a href="mailto:contact@lkreprogrammation.fr">
-            <button className='button' /* onClick={handleNavigation} */ >Contactez-nous</button></a>
+          {/* <a href="mailto:contact@lkreprogrammation.fr"> */}
+          <button className='button' onClick={handleNavigation} >Contactez-nous</button>
+          {/* </a> */}
         </div>
       </div>
       <div className='bg-image-container'>
