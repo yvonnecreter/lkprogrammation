@@ -310,6 +310,19 @@ a:active {
   margin: 0px 0px 40px 0px;
 }
 
+
 .material-symbols-outlined {
-  margin: 0px 10px 0px 30px;
+  margin: 0px 7px 0px 0px;
+}
+
+.searchPage {
+  margin: 100px;
+}
+
+.searchBar {
+  width: 50%;
+}
+
+.searchResult {
+  margin: 20px 00px;
 }

@@ -1,0 +1,48 @@
+{
+    "vehicles": [
+        {
+            "type": "",
+            "brand": "",
+            "model": "",
+            "version": "",
+            "engine": {
+                "name": "",
+                "hp": ""
+            },
+            "origin": {
+                "power": "",
+                "couple": ""
+            },
+            "stage1": {
+                "power": "",
+                "couple": ""
+            },
+            "stage2": {
+                "power": "",
+                "couple": ""
+            }
+        },
+        {
+            "type": "",
+            "brand": "",
+            "model": "",
+            "version": "",
+            "engine": {
+                "name": "",
+                "hp": ""
+            },
+            "origin": {
+                "power": "",
+                "couple": ""
+            },
+            "stage1": {
+                "power": "",
+                "couple": ""
+            },
+            "stage2": {
+                "power": "",
+                "couple": ""
+            }
+        }, ADD HERE THE OTHER ONES IN THE SAME FORMAT
+    ]
+}

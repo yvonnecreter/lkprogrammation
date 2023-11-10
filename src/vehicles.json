@@ -1,0 +1,42 @@
+{
+    "vehicles": [
+        {
+            "type": "car",
+            "brand": "Genesis",
+            "model": "G70",
+            "version": "2017",
+            "engine": {
+                "name": "2.0 T"
+            },
+            "origin": {
+                "power": "255",
+                "couple": "353"
+            },
+            "stage1": {
+                "power": "290",
+                "couple": "410"
+            }
+        },
+        {
+            "type": "car",
+            "brand": "McLaren",
+            "model": "570S / Sprint / GT / GT4",
+            "version": "2015",
+            "engine": {
+                "name": "3.5 T"
+            },
+            "origin": {
+                "power": "570",
+                "couple": "600"
+            },
+            "stage1": {
+                "power": "680",
+                "couple": "720"
+            },
+            "stage2": {
+                "power": "710",
+                "couple": "820"
+            }
+        }
+    ]
+}

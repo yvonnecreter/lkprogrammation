@@ -1,48 +1,8 @@
-import React from 'react';
+import * as React from 'react';
 import './App.css';
-import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
-import Contact from './Contact';
+import { useNavigate } from 'react-router-dom';
 
 function App() {
-  return (
-    <div className="contact-container">
-      <div className="app-header">
-        <div className="header-image">
-          <a href="/">
-            <img src="images/logo.png" alt="logo" />
-          </a>
-        </div>
-        <div className="header-text">
-          <span className="black-text">Golbey, Lorraine, France</span>
-          <span className="black-text">Tuesday - Saturday from 10h to 18h</span>
-          <a href="tel: 581-745-8680" className="red-bg"> &#128222; 581-745-8680</a>
-        </div>
-      </div>
-
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="contact" element={< Contact />} />
-        </Routes>
-      </BrowserRouter>
-      <footer className="footer">
-        <div className="footer-content">
-          <div className="footer-logo">
-            <img src="images/logo-footer.png" alt="Footer Logo" />
-          </div>
-          <div className="footer-links">
-            {/* <a href="/about">About Us</a>
-            <a href="/services">Services</a>
-            <a href="/contact">Contact Us</a> */}
-          </div>
-        </div>
-      </footer>
-
-    </div>
-  );
-}
-
-function Main() {
   const navigate = useNavigate();
   const handleNavigation = () => {
     navigate("contact")
@@ -57,9 +17,9 @@ function Main() {
             L’ART DE LA
             <span className="red-text"> PERFORMANCE</span><br />REPROGRAMMATION TOUS MOTEURS</h1>
           <br />
-          {/* <a href="mailto:contact@lkreprogrammation.fr"> */}
-          <button className='button' onClick={handleNavigation} >Contactez-nous</button>
-          {/* </a> */}
+          <a href="mailto:contact@lkreprogrammation.fr">
+            <button className='button'/*  onClick={handleNavigation} */ >Contactez-nous</button>
+          </a>
         </div>
       </div>
       <div className='bg-image-container'>

@@ -3,7 +3,7 @@ import Cal, { getCalApi } from "@calcom/embed-react";
 import { useEffect } from "react";
 
 
-function Contact() {
+function Booking() {
     useEffect(() => {
         (async function () {
             const cal = await getCalApi();
@@ -19,9 +19,9 @@ function Contact() {
     return (
         <div className="body">
             <img src="images/bg-4.jpg" alt="Interior of Car" className="imageHeader" />
-            <div className="contactContainer" style={{ margin: "200px 0px 300px 0px" }}>
-                <h2 style={{ textAlign: "center" }}>Contactez-Nous</h2>
+            <div className="contactContainer">
                 <div className="contactPanel">
+                    <div style={{ height: "120px" }} />
                     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
                     <br />
                     <a className="contactDetails" href="tel: 581-745-8680">
@@ -30,22 +30,31 @@ function Contact() {
                         </span>
                         581-745-8680
                     </a>
-                    <a className="contactDetails" href="mailto: contact@lkreprogrammation.fr">
+                    <a className="contactDetails" href="https://maps.app.goo.gl/nw9j3ThHh2UnC5sM8">
                         <span className="material-symbols-outlined">
-                            mail
+                            location_on
                         </span>
-                        contact@lkreprogrammation.fr
+                        60 Rue de Lorraine, <br />Golbey
                     </a>
-                    <a className="contactDetails" href="https://www.facebook.com/profile.php?id=61550872804595">
-                        <span className="material-symbols-outlined">
-                            public
-                        </span>
-                        Facebook
-                    </a>
+                    <br />
+
+                </div>
+
+                <div className="contactPanel">
+                    <Cal
+                        calLink="yvonnecreter/booking"
+                        style={{
+                            width: "100%", height: "100%",
+                            overflow: "scroll",
+                            margin: "60px"
+                        }}
+                        config={{ layout: 'month_view' }}
+                    />
                 </div>
             </div>
+            <div style={{ height: "150px" }} />
         </div>)
 
 }
 
-export default Contact;
+export default Booking;
