@@ -3,7 +3,6 @@ import vehicles from "./vehicles.json";
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 import newdata from "./csvjson.json";
-// import "./tailwind.css";
 
 
 const queryClient = new QueryClient()

@@ -1,7 +1,6 @@
 import * as React from 'react';
 import './App.css';
 import { useNavigate } from 'react-router-dom';
-import "./tailwind.css";
 
 function App() {
   const navigate = useNavigate();

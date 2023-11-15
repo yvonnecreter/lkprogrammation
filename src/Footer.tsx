@@ -6,7 +6,7 @@ export default function Footer() {
                     <img src="images/logo-footer.png" alt="Footer Logo" />
                 </div>
                 <div className="footer-links">
-                    <a href="/services">Services</a>
+                    {/* <a href="/services">Services</a> */}
                     <a href="/reservation">Réservation</a>
                     <a href="/contact">Contact</a>
                 </div>
