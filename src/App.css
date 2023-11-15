@@ -326,3 +326,33 @@ a:active {
 .searchResult {
   margin: 20px 00px;
 }
+
+.button-ecu {
+  padding: 10px 20px;
+  margin: 10px 15px;
+  background-color: #83141A;
+  color: white;
+  border-radius: 30px;
+  font-size: larger;
+}
+
+.container-ecu-buttons {
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.button-brand {
+  padding: 10px 20px;
+  margin: 10px 15px;
+
+  background-color: #83141A;
+  color: white;
+  border-radius: 10px;
+  font-size: larger;
+}
+
+.container-ecu {
+  margin: "40px";
+}

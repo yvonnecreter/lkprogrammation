@@ -18,7 +18,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
       <Route path="/" element={<App />} />
-      <Route path="booking" element={< Booking />} />
+      <Route path="reservation" element={< Booking />} />
       <Route path="contact" element={< Contact />} />
       <Route path="services" element={< Services />} />
       <Route path="service/:brand/:model" element={<Service />} />
@@ -36,8 +36,6 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
 );
 
 reportWebVitals();
-
-
 
 function Service() {
   let { brand, model } = useParams();

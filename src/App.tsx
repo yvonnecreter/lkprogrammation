@@ -1,15 +1,17 @@
 import * as React from 'react';
 import './App.css';
 import { useNavigate } from 'react-router-dom';
+import "./tailwind.css";
 
 function App() {
   const navigate = useNavigate();
   const handleNavigation = () => {
-    navigate("contact")
+    navigate("reservation")
   }
 
   return (
     <body className='body'>
+      <link href="./dist/app.css" rel="stylesheet" />
       <div className='app-video'>
         <video src="videos/bg.mp4" className="video-header" autoPlay loop muted />
         <div className="text-overlay">
@@ -17,9 +19,9 @@ function App() {
             L’ART DE LA
             <span className="red-text"> PERFORMANCE</span><br />REPROGRAMMATION TOUS MOTEURS</h1>
           <br />
-          <a href="mailto:contact@lkreprogrammation.fr">
-            <button className='button'/*  onClick={handleNavigation} */ >Contactez-nous</button>
-          </a>
+          {/* <a href="mailto:contact@lkreprogrammation.fr"> */}
+          <button className='button' onClick={handleNavigation}>Faire une réservation</button>
+          {/* </a> */}
         </div>
       </div>
       <div className='bg-image-container'>
@@ -61,7 +63,7 @@ function App() {
         {/* CONTACT INFO */}
         <div className='contact-section'>
           <h2 >Où nous trouver</h2>
-          <p>Facebook Page: <a className="href-link" href="https://www.facebook.com/profile.php?id=61550872804595">Visit Our Facebook Page</a>
+          <p>Facebook Page: <a className="href-link" href="https://www.facebook.com/profile.php?id=61550872804595">Visitez notre page Facebook</a>
           </p>
           <p>Téléphone: <a className="href-link" href="tel:0771072309">0771072309</a>
           </p>

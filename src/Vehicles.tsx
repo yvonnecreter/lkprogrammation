@@ -1,7 +1,6 @@
 import React from "react";
 import vehicles from "./vehicles.json";
 
-//Technically both components could be put together, but I'll leave it at that for future design possiblities
 function Service({ brand, model }: { brand: string; model: string }) {
     let c = false;
     for (let item of vehicles.vehicles) {

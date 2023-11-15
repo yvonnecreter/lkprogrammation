@@ -2,6 +2,9 @@ import * as React from "react";
 import vehicles from "./vehicles.json";
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
+import newdata from "./csvjson.json";
+// import "./tailwind.css";
+
 
 const queryClient = new QueryClient()
 
@@ -49,9 +52,15 @@ function Services() {
         setFilteredData(results);
     };
 
+    const brands: string[] = ["sunner", "winter", "august"];
+    newdata.forEach((i) => {
+        if (!brands.includes(i.brand)) {
+            brands.push(i.brand)
+        }
+    })
 
-    return (
-        <div className="searchPage">
+    // SEARCH FUNCTION
+    {/* <div className="searchPage">
 
             <QueryClientProvider client={queryClient}>
                 <ReactQueryDevtools initialIsOpen />
@@ -79,15 +88,31 @@ function Services() {
                         <br /></div>
                 ))}
             </div>
+        </div> */}
 
-            {/* Results:
-            {JSON.stringify(filteredData)}
-            {filteredData.map((item) => (
-                <div key={item.brand}>{item.brand} ({item.model})</div>
-            ))}
-            <br />
-            Available Data: {JSON.stringify(data)} */}
-        </div>
+    return (
+        <div className="container-ecu">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+            <h1>ECU Tuning Automobile</h1>
+            <p>Discover all the potential and possibilities offered to your vehicle in our car reprogramming catalog. Each available course is listed in our database with all the options available, if you cannot find your vehicle in the list do not hesitate to contact us .</p>
+            <div className="container-ecu-buttons">
+                <button className="button-ecu">Brand</button>
+                <span className="material-symbols-outlined">arrow_forward_ios</span>
+                <button className="button-ecu">Model</button>
+                <span className="material-symbols-outlined">arrow_forward_ios</span>
+                <button className="button-ecu">Year</button>
+                <span className="material-symbols-outlined">arrow_forward_ios</span>
+                <button className="button-ecu">Engine</button>
+                <span className="material-symbols-outlined">arrow_forward_ios</span>
+                <button className="button-ecu">Configuration</button>
+            </div>
+            <div>
+                <p>Select your brand</p>
+                <div className="grid grid-cols-4 grid-flow-row grid-rows-4  gap-4">
+                    {brands.map((i) => (<div className="button-brand" key={i}> {i} </div>))}
+                </div>
+            </div>
+        </div >
     )
 }
 

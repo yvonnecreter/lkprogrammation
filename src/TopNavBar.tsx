@@ -11,7 +11,7 @@ function TopNavBar() {
             </div>
             <div className="header-text">
                 <span className="black-text">Golbey, Lorraine, France</span>
-                <span className="black-text">Tuesday - Saturday from 10h to 18h</span>
+                <span className="black-text">Lundi - Samedi de 10h à 18h</span>
                 <a href="tel: 0771072309" className="red-bg"> &#128222; 0771072309</a>
             </div>
         </div>

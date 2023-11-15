@@ -24,11 +24,11 @@ function Booking() {
                     <div style={{ height: "120px" }} />
                     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
                     <br />
-                    <a className="contactDetails" href="tel: 581-745-8680">
+                    <a className="contactDetails" href="tel: 0771072309">
                         <span className="material-symbols-outlined">
                             call
                         </span>
-                        581-745-8680
+                        0771072309
                     </a>
                     <a className="contactDetails" href="https://maps.app.goo.gl/nw9j3ThHh2UnC5sM8">
                         <span className="material-symbols-outlined">
@@ -42,7 +42,7 @@ function Booking() {
 
                 <div className="contactPanel">
                     <Cal
-                        calLink="yvonnecreter/booking"
+                        calLink="lkreprogrammation/reservation"
                         style={{
                             width: "100%", height: "100%",
                             overflow: "scroll",

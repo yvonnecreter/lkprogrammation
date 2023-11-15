@@ -11,7 +11,7 @@ function Contact() {
                 "styles": {
                     "branding": { "brandColor": "#B5121B" }
                 },
-                "hideEventTypeDetails": true,
+                "hideEventTypeDetails": false,
                 "layout": "month_view"
             });
         })();
@@ -24,11 +24,11 @@ function Contact() {
                 <div className="contactPanel">
                     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
                     <br />
-                    <a className="contactDetails" href="tel: 581-745-8680">
+                    <a className="contactDetails" href="tel: 0771072309">
                         <span className="material-symbols-outlined">
                             call
                         </span>
-                        581-745-8680
+                        0771072309
                     </a>
                     <a className="contactDetails" href="mailto: contact@lkreprogrammation.fr">
                         <span className="material-symbols-outlined">
