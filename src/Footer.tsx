@@ -5,7 +5,7 @@ export default function Footer() {
                 <div className="footer-logo">
                     <img src="images/logo-footer.png" alt="Footer Logo" />
                 </div>
-                <div className="footer-links">
+                <div className="footer-links text-xs md:text-base">
                     {/* <a href="/services">Services</a> */}
                     <a href="/reservation">Réservation</a>
                     <a href="/contact">Contact</a>

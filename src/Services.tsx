@@ -4,7 +4,6 @@ import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 import newdata from "./csvjson.json";
 
-
 const queryClient = new QueryClient()
 
 const ReactQueryDevtoolsProduction = React.lazy(() =>
@@ -90,20 +89,20 @@ function Services() {
         </div> */}
 
     return (
-        <div className="container-ecu">
+        <div className="m-8">
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-            <h1>ECU Tuning Automobile</h1>
-            <p>Discover all the potential and possibilities offered to your vehicle in our car reprogramming catalog. Each available course is listed in our database with all the options available, if you cannot find your vehicle in the list do not hesitate to contact us .</p>
-            <div className="container-ecu-buttons">
-                <button className="button-ecu">Brand</button>
+            <h1 className="text-5xl mb-5">ECU Tuning Automobile</h1>
+            <p className="text-xl">Discover all the potential and possibilities offered to your vehicle in our car reprogramming catalog. Each available course is listed in our database with all the options available, if you cannot find your vehicle in the list do not hesitate to contact us .</p>
+            <div className="">
+                <button className="button-ecu text-2xl">Brand</button>
                 <span className="material-symbols-outlined">arrow_forward_ios</span>
-                <button className="button-ecu">Model</button>
+                <button className="button-ecu text-2xl">Model</button>
                 <span className="material-symbols-outlined">arrow_forward_ios</span>
-                <button className="button-ecu">Year</button>
+                <button className="button-ecu text-2xl">Year</button>
                 <span className="material-symbols-outlined">arrow_forward_ios</span>
-                <button className="button-ecu">Engine</button>
+                <button className="button-ecu text-2xl">Engine</button>
                 <span className="material-symbols-outlined">arrow_forward_ios</span>
-                <button className="button-ecu">Configuration</button>
+                <button className="button-ecu text-2xl">Configuration</button>
             </div>
             <div>
                 <p>Select your brand</p>

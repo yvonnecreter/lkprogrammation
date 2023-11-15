@@ -28,7 +28,6 @@
 }
 
 .app-header {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: white;
@@ -36,10 +35,28 @@
   padding: 16px;
 }
 
+.mobile-header {
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  height: 35px;
+  padding: 8px;
+}
+
 .header-image img {
   max-width: 100%;
   max-height: 250px;
   padding-bottom: 35px;
+}
+
+/* .header-image img {
+  max-width: 85%;
+  max-height: 250px;
+  padding-bottom: 50px;
+} */
+.mobile-header-image {
+  position: relative;
+  width: 120px;
 }
 
 .header-text {
@@ -73,6 +90,7 @@
   opacity: 40%;
   object-fit: cover;
   position: relative;
+  min-height: 400px;
 }
 
 .text-overlay {
@@ -109,13 +127,12 @@ h1 {
   text-transform: uppercase;
   color: #FFFFFF;
   cursor: pointer;
-  font-size: 14px;
   font-weight: 500;
-  height: 40px;
-  line-height: 20px;
+  /* height: 40px; */
+  /* line-height: 20px; */
   list-style: none;
   outline: none;
-  padding: 28px 25px;
+  /* padding: 28px 25px; */
   /* padding: 10px 16px; */
   position: relative;
   text-align: center;
@@ -123,7 +140,7 @@ h1 {
   vertical-align: baseline;
 
   touch-action: manipulation;
-  font-size: 24px;
+  /* font-size: 24px; */
   display: flex;
   align-items: center;
   align-content: center;
@@ -165,12 +182,12 @@ h1 {
 .tri-service {
   display: flex;
   justify-content: space-between;
-  margin: 90px;
+  /* margin: 90px; */
   color: white;
 }
 
 .panel-service {
-  width: 30%;
+  /* width: 30%; */
   text-align: left;
   /* padding: 50px 20px; */
   padding: 3% 3%;
@@ -181,7 +198,7 @@ h1 {
 
 .contact-section {
   text-align: left;
-  padding: 0px 90px;
+  /* padding: 0px 90px; */
   color: white;
   z-index: 100;
 }
@@ -351,8 +368,4 @@ a:active {
   color: white;
   border-radius: 10px;
   font-size: larger;
-}
-
-.container-ecu {
-  margin: "40px";
 }

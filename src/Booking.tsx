@@ -21,7 +21,7 @@ function Booking() {
             <img src="images/bg-4.jpg" alt="Interior of Car" className="imageHeader" />
             <div className="contactContainer">
                 <div className="contactPanel">
-                    <div style={{ height: "120px" }} />
+                    <div className="h-[120px]" />
                     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
                     <br />
                     <a className="contactDetails" href="tel: 0771072309">
@@ -52,7 +52,7 @@ function Booking() {
                     />
                 </div>
             </div>
-            <div style={{ height: "150px" }} />
+            <div className="h-[150px]" />
         </div>)
 
 }
