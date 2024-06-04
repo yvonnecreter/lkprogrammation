@@ -4,8 +4,10 @@ import './index.css';
 import App from './App';
 import Booking from './Booking';
 import Services from './Services';
+import OpeningIntro from './OpeningIntro';
 import Contact from './Contact';
-import TopNavBar from './TopNavBar';
+import TopNavBar from './NavigationBar';
+import InfoCards from './InfoCards';
 import reportWebVitals from './reportWebVitals';
 import Footer from './Footer';
 import {
@@ -17,7 +19,7 @@ import vehicles from "./vehicles.json";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
-      <Route path="/" element={<App />} />
+      <Route path="/" element={<><OpeningIntro /> <InfoCards /> <App /></>} />
       <Route path="booking" element={< Booking />} />
       <Route path="contact" element={< Contact />} />
       <Route path="services" element={< Services />} />

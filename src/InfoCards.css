@@ -1,0 +1,48 @@
+.infoCards {
+    justify-content: space-between;
+    align-items: center;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: -600px;
+    padding: 50px;
+}
+
+.infoCard {
+    width: 300px;
+    background-image: linear-gradient(-20deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
+    padding: 25px;
+    border-radius: 1vmax;
+    backdrop-filter: blur(5px);
+    border-color: white;
+    outline: 0.01px solid white;
+}
+
+.c001 {
+    margin-top: -5px;
+}
+
+.c002 {
+    font-size: xxx-large;
+    font-weight: 900;
+    margin-top: -15px;
+}
+
+.c003 {
+    margin-top: -35px;
+}
+
+
+.solid{
+    border-top: 0ch solid #bbb;
+    position: absolute;
+    width: 100%;
+}
+
+.hoverTop {
+    top: -30px;
+}
+
+.hoverBottom {
+    bottom: -30px;
+}
